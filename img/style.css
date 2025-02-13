@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Fullscreen Background */
+  .Main {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Logo Styling */
+  .logo h1 {
+    font-size: 50px;
+    color: pink;
+    font-family: "Gochi Hand", cursive;
+    margin-bottom: 20px;
+  }
+  
+  /* Proposal Text */
+  .Proposal {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Gochi Hand", cursive;
+    color: pink;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heart Icon */
+  .bx.bxs-heart {
+    font-size: 50px;
+    color: pink;
+    margin-top: 10px;
+    animation: heartbeat 1s infinite;
+  }
+  
+  /* Heartbeat Animation */
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Button and GIF Container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Space between GIFs */
+    margin-top: 20px;
+  }
+  
+  /* Individual Option (GIF + Button) */
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* GIF Styling */
+  .gif {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Space between GIF and button */
+  }
+  
+  /* Cute Button Styling */
+  .btn {
+    width: 150px;
+    height: 45px;
+    color: white;
+    background: pink;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Button Hover Effect */
+  .btn:hover {
+    background: #ff69b4;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.5);
+  }
+  
